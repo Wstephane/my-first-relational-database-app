@@ -5,13 +5,4 @@
     $tva_societe = $_POST['tva_societe'];
     $telephone_societe = $_POST['telephone_societe'];
     $types_id_types = $_POST['types_id_types'];
-
-    switch($types_id_types){
-        case 1:
-        echo "Fournisseur";
-        break;
-        case 2:
-        echo "Client";
-        break;
-    }
 ?>    
