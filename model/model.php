@@ -8,7 +8,7 @@
     $stmt = $db->prepare("INSERT INTO societe (nom_societe, pays_societe, tva_societe, telephone_societe, types_id_types) 
     VALUES (:nom_societe, :pays_societe, :tva_societe, :telephone_societe, :types_id_types)");
 
-    // $stmt->bindParam(':id_societe', $id_societe);
+    $stmt->bindParam(':id_societe', $id_societe);
     $stmt->bindParam(':nom_societe', $nom_societe);
     $stmt->bindParam(':pays_societe', $pays_societe);
     $stmt->bindParam(':tva_societe', $tva_societe);

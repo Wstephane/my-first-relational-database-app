@@ -1,7 +1,7 @@
 <?php include('../head.php');?>
 <body>
-	<a href="../societe.php">Societe</a>
-	<h1>Ajouter une societe</h1>
+	<a href="../societe.php">Société</a>
+	<h1>Ajouter une Société</h1>
 	<form action="../../../../model/model.php" method="post">
 		<div>
 			<label for="name">Nom de la societe</label>
