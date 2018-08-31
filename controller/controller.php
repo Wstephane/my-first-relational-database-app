@@ -11,4 +11,6 @@
     $date_facture = $_POST["date_facture"];
     $numero_facture = $_POST["numero_facture"];
     $objet_facture = $_POST["objet_facture"];
+    $societe_id_societe = $_POST["societe_id_societe"];
+    $personne_id_societe = $_POST["personne_id_personne"];
 ?>
