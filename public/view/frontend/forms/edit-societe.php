@@ -9,19 +9,19 @@ include('../head.php');
 	<input type="text" name="id_societe" value="<?php echo $id_societe;?>" class="display-none">
 		<div>
 			<label for="name">Nom de la societe</label>
-			<input type="text" name="nom_societe" value="<?php echo $nom_societe;?>">
+			<input type="text" name="nom_societe" value="<?php echo $nom_societe;?>" required>
 		</div>
         <div>
 			<label for="pays">Pays de la societe</label>
-			<input type="text" name="pays_societe" value="<?php echo $pays_societe;?>">
+			<input type="text" name="pays_societe" value="<?php echo $pays_societe;?>" required>
 		</div>
 		<div>
 			<label for="tva">Nº de TVA</label>
-			<input type="number" name="tva_societe" value="<?php echo $tva_societe;?>">
+			<input type="number" name="tva_societe" value="<?php echo $tva_societe;?>" required>
 		</div>
 		<div>
 			<label for="telephone">Nº de téléphone</label>
-			<input type="number" name="telephone_societe" value="<?php echo $telephone_societe;?>">
+			<input type="number" name="telephone_societe" value="<?php echo $telephone_societe;?>" required>
 		</div>
 		<div>
 			<label for="types">Types</label>

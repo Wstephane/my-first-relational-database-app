@@ -1,14 +1,13 @@
 <?php
   include('db.php');
 
-  if (isset($_POST['submit']))
+  if (isset($_POST['submit_societe']))
   {
     include('../controller/controller.php');
 
     $stmt = $db->prepare("INSERT INTO societe (nom_societe, pays_societe, tva_societe, telephone_societe, types_id_types) 
     VALUES (:nom_societe, :pays_societe, :tva_societe, :telephone_societe, :types_id_types)");
 
-    // $stmt->bindParam(':id_societe', $id_societe);
     $stmt->bindParam(':nom_societe', $nom_societe);
     $stmt->bindParam(':pays_societe', $pays_societe);
     $stmt->bindParam(':tva_societe', $tva_societe);
@@ -18,6 +17,19 @@
     $stmt->execute();
     header("Location: ../public/view/frontend/societe.php");
   }
+
+  if(count($error_list) != 0){
+    $string = '../public/view/frontend/forms/add-societe.php?status=false';
+    foreach($error_list as $index=>$value){
+        $string .= '&'.$value.'=false';
+    }
+    var_dump($string);
+    header('Location: '.$string);
+  }else{
+    header('Location: ../public/view/index.php');
+  }
+
+  // Factures
 
   if (isset($_POST['submit_factures'])) {
     include('../controller/controller.php');
@@ -35,5 +47,18 @@
     $stmt->Execute();
     header("Location: ../public/view/frontend/factures.php");
     }
+
+  if (count($error_list) != 0){
+    $string = '../public/view/frontend/forms/add-facture.php?status=false';
+    foreach ($error_list as $index=>$value) {
+        $string .= '&'.$value.'=false';
+    }
+    var_dump($string);
+    header('Location: '.$string);
+
+  } else {
+    
+    header('Location: ../public/view/index.php');
+  }
 
 ?>
