@@ -3,7 +3,7 @@ include("../../../../controller/edit.php");
 include('../head.php');
 ?>
 <body>
-	<a href="../facture.php">Société</a>
+	<a href="../facture.php">Facture</a>
 	<h1>Editer Facture</h1>
 	<form action="edit-facture.php" method="post">
 	<input type="text" name="id_facture" value="<?php echo $id_facture;?>" class="display-none">
