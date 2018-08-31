@@ -1,5 +1,5 @@
 <?php 
-    $id_societe = $_POST['id_societe'];
+    // $id_societe = $_POST['id_societe'];
     $nom_societe = $_POST['nom_societe'];
     $pays_societe = $_POST['pays_societe'];
     $tva_societe = $_POST['tva_societe'];
