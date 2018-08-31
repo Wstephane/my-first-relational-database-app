@@ -1,7 +1,9 @@
 <?php
   include('db.php');
 
-  if (isset($_POST['submit']))
+  //Societe
+  
+  if (isset($_POST['submit_societe']))
   {
     include('../controller/controller.php');
 
@@ -27,4 +29,5 @@
       header('Location: ../public/view/index.php');
     }
   }
+
 ?>

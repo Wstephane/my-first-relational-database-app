@@ -54,7 +54,7 @@
 				<option value="2">Client</option>
 			</select>
 		</div>
-		<button type="submit" name="submit">Envoyer</button>
+		<button type="submit" name="submit_societe">Envoyer</button>
 	</form>
 </body>
 </html>
