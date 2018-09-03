@@ -8,4 +8,3 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cogiq</title>
-</head>

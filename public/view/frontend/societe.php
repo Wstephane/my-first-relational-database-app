@@ -1,4 +1,5 @@
-<?php include('head.php')?>
+<?php include('frontend/head.php');?>
+</head>
 <body>
 	<h1>Liste societe</h1>
     <a href="forms/add-societe.php">Ajouter</a>

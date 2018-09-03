@@ -1,5 +1,5 @@
-<img src="../../public/assets/img/logo.png" alt="" class="logo" width="20%">
-<div>Bonjour [GET_$name]</div>
-<a href="">Deconnexion</a>
-</body>
-</html>
+<header class="row">
+    <h1><i class="fas fa-cookie-bite"></i>COGIP</h1>
+    <p class="welcome">Bonjour [GET_$name]</p>
+    <a href="">Deconnexion</a>
+</header>

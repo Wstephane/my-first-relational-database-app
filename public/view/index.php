@@ -1,4 +1,6 @@
 <?php include('frontend/head.php');?>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
 <body>
 <?php include('frontend/header.php');?>
 <section>
