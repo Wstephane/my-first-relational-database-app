@@ -5,3 +5,27 @@ input.display-none{
 input.error{
     border: 1px red solid;
 }
+
+input.input-read{
+    border-bottom: none !important;
+}
+
+td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+tr{
+    border-bottom: none;
+}
+
+tr:nth-child(odd){ 
+    background-color:#eee; 
+}
+tr:nth-child(even){ 
+    background-color:#fff; 
+}
+
+tr.row-titles{
+    background-color:#fff;   
+}
