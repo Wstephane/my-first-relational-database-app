@@ -32,4 +32,6 @@
     if(strlen($san_telephone_societe)< 6){
         array_push($error_list, "san_telephone_societe");
     }
+
+    print_r($error_list);
 ?>
