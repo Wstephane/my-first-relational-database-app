@@ -36,7 +36,6 @@
             <td><input name="telephone_societe" value="<?=$data["telephone_societe"]?>" readonly class="input-read"></td>
             <td><input name="types_id_types" value="<?=$type_name[$data['types_id_types']]?>" readonly class="input-read"></td>
             <td><a href="forms/view-societe.php?id=<?=$data["id_societe"]?>"><i class="far fa-eye"></i></a></td>
-            
             <td><a href="forms/edit-societe.php?id=<?=$data["id_societe"]?>"><i class="fas fa-pen"></i></a></td>
             <td class="table-last"><a href="../../../controller/delete.php?id=<?=$data["id_societe"]?>"><i class="far fa-trash-alt"></i></a></td>
             </tr>

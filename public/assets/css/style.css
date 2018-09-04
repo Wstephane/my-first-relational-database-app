@@ -211,6 +211,9 @@ p.error{
     position: absolute;
     color: red;
     padding-top: 5px;
+    margin-top: 0px;
+    top: 45px;
+    font-size: 10px;
 }
 
 form.add-edit{
@@ -272,4 +275,13 @@ select.browser-default{
 
 .btn-edit{
     width: 200px;
+}
+
+input[type="submit"] {
+    color: white !important;
+}
+
+.index-links{
+    margin-top: 20px;
+    font-size: 20px;
 }

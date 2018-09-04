@@ -6,7 +6,7 @@
     </div>
 </header>
 <section class="menu">
-        <a href="#">Accueil</a>
-        <a href="#">Founisseurs</a>
-        <a href="#">Clients</a>   
+        <a href="index.php">Accueil</a>
+        <a href="fournisseurs.php">Founisseurs</a>
+        <a href="clients.php">Clients</a>   
 </section>
