@@ -8,7 +8,7 @@
 		<div class="row heading_table heading_edit">
 			<h1>Ajouter une Société</h1>
 		</div>
-			<form action="../../../../model/model.php" method="post" enctype="multipart/form-data" class="add-edit">
+			<form action="../../../../model/model_societe.php" method="post" enctype="multipart/form-data" class="add-edit">
 				<div class="input-field">
 					<label for="name">Nom de la societe</label>
 					<input type="text" name="nom_societe" value="">

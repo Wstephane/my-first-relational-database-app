@@ -14,7 +14,7 @@
         </thead>
         <tbody>
             <?php 
-                include('../../../model/model.php');
+                include('../../../model/model_facture.php');
                 $result = $db->query('SELECT * FROM factures');
                 while ($data = $result->fetch())
                 {

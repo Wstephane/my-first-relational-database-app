@@ -20,7 +20,7 @@
             </tr>
             </thead>
             <tbody>
-                <?php include('../../../model/model.php');
+                <?php include('../../../model/model_societe.php');
                 $result = $db->query('SELECT * FROM societe');
                 $type_name = array(
                     1 => 'Fournisseur',
