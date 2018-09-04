@@ -42,6 +42,7 @@
           <td><input name="telephone_personne" value="<?=$data["telephone_personnes"]?>"></td>
           <td><input name="email_personne" value="<?=$data["email_personnes"]?>"></td>
 					<td><input name="societe_id_societe" value="<?=$societe_name[$data["societe_id_societe"]]?>"></td>
+					<td><a href="forms/view-personnes.php?id=<?=$data["id_personnes"]?>"><i class="far fa-eye"></i></a></td>
 					<td><a href="forms/edit-personnes.php?id=<?=$data["id_personnes"]?>"><i class="fas fa-pen"></i></a></td>
           <td><a href="../../../controller/delete-personnes.php?id=<?=$data["id_personnes"]?>"><i class="far fa-trash-alt"></i></a></td>
         </tr>
