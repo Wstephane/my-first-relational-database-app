@@ -34,7 +34,16 @@
     $stmt->bindParam(':societe_id_societe', $societe_id_societe);
 
     $stmt->execute();
-    header("Location: ../public/view/frontend/clients.php");
+    if(count($error_list) != 0){
+      $string = '../public/view/frontend/forms/add-contact.php?status=false';
+      foreach($error_list as $index=>$value){
+          $string .= '&'.$value.'=false';
+      }
+      var_dump($string);
+      header('Location: '.$string);
+    }else{
+      header('Location: ../public/view/index.php');
+    }
   }
 
 

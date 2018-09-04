@@ -16,6 +16,7 @@
 
 							<?php include('../../../model/db.php');
 							$result = $db->query('SELECT * FROM societe');
+
 							$societe_name = array();
 							$i =1;
 
