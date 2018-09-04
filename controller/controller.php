@@ -36,7 +36,7 @@
 
     //Facture
 
-    $id_facture = $_POST["id_facture"];
+    $id_factures = $_POST["id_factures"];
     $date_facture = $_POST["date_facture"];
     $numero_facture = $_POST["numero_facture"];
     $objet_facture = $_POST["objet_facture"];

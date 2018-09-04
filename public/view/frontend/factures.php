@@ -1,7 +1,7 @@
 <?php include('head.php')?>
 <body>
 	<h1>Liste de Facture</h1>
-    <a href="forms/add-facture.php">Ajouter</a>
+    <a href="forms/add-facture.php">Ajouter une facture</a>
     <table>
         <thead>
         <tr>
@@ -13,16 +13,24 @@
         </tr>
         </thead>
         <tbody>
-            <?php include('../../../model/model.php');?>
-        <tr>
-          <td><input name="numero_facture" value="<?=$data["numero_facture"]?>"></td>
-          <td><input name="date_facture" value="<?=$data["date_facture"]?>"></td>
-          <td><input name="objet_facture" value="<?=$data["objet_facture"]?>"></td>
-          <td><input name="societe_id_societe" value="<?=$data["societe_id_societe"]?>"></td>
-          <td><input name="personnes_id_personnes" value="<?=$data['personnes_id_personnes']?>"></td>
-          <td><a href="forms/edit-facture.php?id=<?=$data["id_facture"]?>"><i class="fas fa-pen"></i></a></td>
-          <td><a href="../../../controller/delete.php?id=<?=$data["id_facture"]?>"><i class="far fa-trash-alt"></i></a></td>
-        </tr>
+            <?php 
+                include('../../../model/model.php');
+                $result = $db->query('SELECT * FROM factures');
+                while ($data = $result->fetch())
+                {
+                    ?>
+                    <tr>
+                        <td><input name="numero_facture" value="<?=$data["numero_facture"]?>"></td>
+                        <td><input name="date_facture" value="<?=$data["date_facture"]?>"></td>
+                        <td><input name="objet_facture" value="<?=$data["objet_facture"]?>"></td>
+                        <td><input name="societe_id_societe" value="<?=$data["societe_id_societe"]?>"></td>
+                        <td><input name="personnes_id_personnes" value="<?=$data['personnes_id_personnes']?>"></td>
+                        <td><a href="forms/edit-facture.php?id=<?=$data["id_facture"]?>"><i class="fas fa-pen"></i></a></td>
+                        <td><a href="../../../controller/delete.php?id=<?=$data["id_facture"]?>"><i class="far fa-trash-alt"></i></a></td>
+                    </tr>
+                    <?php
+                }
+            ?>
       </tbody>
     </table>
 </body>
