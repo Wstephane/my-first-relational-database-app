@@ -256,3 +256,20 @@ select.browser-default{
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.input-view{
+    font-size: 20px;
+}
+
+.input-view p{
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 10px;
+}
+
+.view{
+    padding-top: 30px;
+}
+
+.btn-edit{
+    width: 200px;
+}
