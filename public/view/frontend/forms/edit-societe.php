@@ -1,11 +1,14 @@
-<?php
-include("../../../../controller/edit.php");
-include('../head.php');
-?>
+<?php include("../../../../controller/edit.php"); ?>
+<?php include('../head.php');?>
+<link rel="stylesheet" href="../../../assets/css/style.css">
 <body>
-	<a href="../societe.php">Société</a>
-	<h1>Editer Société</h1>
-	<form action="edit-societe.php" method="post">
+<?php include('../../frontend/header.php');?>
+<div class="container">
+	<div class="form-container">
+		<div class="row heading_table heading_edit">
+			<h1>Editer Société</h1>
+		</div>
+	<form action="edit-societe.php" method="post" class="add-edit">
 	<input type="text" name="id_societe" value="<?php echo $id_societe;?>" class="display-none">
 		<div>
 			<label for="name">Nom de la societe</label>
@@ -25,12 +28,17 @@ include('../head.php');
 		</div>
 		<div>
 			<label for="types">Types</label>
-			<select name="types_id_types">
+			<select name="types_id_types" class="browser-default">
 				<option value="1">Fournisseur</option>
 				<option value="2">Client</option>
 			</select>
 		</div>
-		<button type="submit" name="edit-societe">Envoyer</button>
+		<div class="controls-btn">
+			<button type="submit" name="edit-societe" class="waves-effect waves-light btn blue accent-4 add">Envoyer</button>
+			<div class="btn white"><a href="../societe.php">Annuler</a></div>
+		</div>
 	</form>
+	</div>
+</div>
 </body>
 </html>

@@ -1,7 +1,287 @@
+header{
+    background: -webkit-linear-gradient(90deg, rgb(41, 98, 255), rgb(41, 121, 255));
+    background: linear-gradient(90deg, rgb(41, 98, 255), rgb(41, 121, 255));
+}
+
+.row{
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header-navbar{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    max-width: 1100px;
+    align-items: baseline;
+}
+
+.header-navbar i{
+    margin-right: 8px
+}
+
+.header-navbar p{
+    font-weight: lighter;
+}
+
+.header-navbar h1{
+    margin-top: 0px;
+    font-size: 28px;
+    padding-top: 16px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.header-navbar a{
+    padding-top: 22px;
+    color: white;
+    border-bottom: solid white 1px;
+}
+
+section.menu{
+    max-width: 1100px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+section.menu a{
+    margin-right: 10px;
+}
+
+/* section.menu a::after{
+    content: "/";
+    margin-left: 10px;
+} */
+
+.add a{
+    color: #fff;
+}
+
+p.welcome{
+    padding-top: 0px;
+    font-size: 19px;
+}
+
+.row:after {
+    display: none;
+}
+
+.heading_table{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.heading_table h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+table{
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 3px 0px #bdbdbd;
+    -webkit-box-shadow: 1px 1px 3px 0px #bdbdbd;
+}
+
+.table-first{
+    padding-left: 20px;
+}
+
+.table-last{
+    padding-right: 20px;
+}
+
+input{
+    font-size: 14px;
+}
+
+input.input-read{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
 input.display-none{
     display: none;
 }
 
 input.error{
     border: 1px red solid;
+}
+
+input.input-read{
+    border-bottom: none !important;
+}
+
+td{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+}
+
+tr{
+    border-bottom: none;
+}
+
+tr:nth-child(odd){ 
+    background-color:#fff; 
+}
+tr:nth-child(even){ 
+    background-color:#eee; 
+}
+
+tr.row-titles{
+    background-color: #adadad ;
+}
+
+th{
+    padding: 10px 5px; 
+    border-radius: 0px; 
+}
+
+tr{
+    padding: 10px 5px;  
+}
+
+.login{
+    position: absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 420px;
+    box-shadow: 1px 1px 6px 0px #bdbdbd;
+    -webkit-box-shadow: 1px 1px 6px 0px #bdbdbd;
+}
+
+.card-title{
+    background-color: #2962ff;
+    height: 100px;
+    color: #fff;
+    padding-top: 28px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: -webkit-linear-gradient(90deg, rgb(41, 98, 255), rgb(41, 121, 255));
+    background: linear-gradient(90deg, rgb(41, 98, 255), rgb(41, 121, 255));
+}
+
+.card-title i{
+    margin-right: 10px
+}
+
+.card-title h1{
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline;
+}
+
+.login-background{
+    background-color: #fafafa; 
+}
+
+.login-btn{
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-pwd{
+    margin-top: 28px;
+}
+
+.login-id input, .login-pwd input{
+    height: 2.3rem !important;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #2962ff;
+}
+
+p.error{
+    position: absolute;
+    color: red;
+    padding-top: 5px;
+    margin-top: 0px;
+    top: 45px;
+    font-size: 10px;
+}
+
+form.add-edit{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    padding-top: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 6px 0px #bdbdbd;
+    -webkit-box-shadow: 1px 1px 6px 0px #bdbdbd;
+}
+
+.heading_edit{
+    padding-left: 0px;
+}
+
+select.browser-default{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.input-select label{
+    font-size: 1rem;
+}
+
+.controls-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.input-view{
+    font-size: 20px;
+}
+
+.input-view p{
+    border-bottom: 1px solid #bdbdbd;
+    margin-top: 10px;
+}
+
+.view{
+    padding-top: 30px;
+}
+
+.btn-edit{
+    width: 200px;
+}
+
+input[type="submit"] {
+    color: white !important;
+}
+
+.index-links{
+    margin-top: 20px;
+    font-size: 20px;
 }
