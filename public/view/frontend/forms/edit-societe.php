@@ -1,4 +1,4 @@
-<?php include("../../../../controller/edit.php"); ?>
+<?php include("../../../../controller/edit-societe.php"); ?>
 <?php include('../head.php');?>
 <link rel="stylesheet" href="../../../assets/css/style.css">
 <body>

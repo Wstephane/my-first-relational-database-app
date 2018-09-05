@@ -37,11 +37,6 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
 							?>
             <?php include('../../../model/model_clients.php');
             $result = $db->query('SELECT * FROM personnes');
-            // MODIFIER
-						// $type_name = array(
-            //     1 => 'Fournisseur',
-            //     2 => 'Client'
-            //     );
                 while ($data = $result->fetch())
             {
             ?>

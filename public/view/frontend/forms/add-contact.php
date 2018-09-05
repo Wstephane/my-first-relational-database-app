@@ -7,7 +7,7 @@
 			<label for="nom_personne">Nom du membre</label>
 			<input type="text" name="nom_personne" value="">
 		</div>
-    <div>
+    	<div>
 			<label for="prenom_personne">Prénom du membre</label>
 			<input type="text" name="prenom_personne" value="">
 		</div>
