@@ -28,11 +28,6 @@
 							?>
             <?php include('../../../model/model.php');
             $result = $db->query('SELECT * FROM personnes');
-            // MODIFIER
-						// $type_name = array(
-            //     1 => 'Fournisseur',
-            //     2 => 'Client'
-            //     );
                 while ($data = $result->fetch())
             {
             ?>

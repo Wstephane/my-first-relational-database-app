@@ -1,4 +1,6 @@
 <?php
+
+// Société
 include('../model/db.php');
 $id_societe = $_GET['id'];
 $sql = "DELETE FROM societe WHERE id_societe=:id";
@@ -11,5 +13,5 @@ $id_facture = $_GET['id'];
 $sql = "DELETE FROM facture WHERE id_facture=id";
 $query = $db->prepare($sql);
 $query->execute(array(':id' => $id_facture));
-header("Location: ../public/view/frontend/facture.php");
+header("Location: ../public/view/frontend/factures.php");
 ?>

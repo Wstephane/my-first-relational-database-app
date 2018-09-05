@@ -20,11 +20,4 @@
     header("Location: ../public/view/frontend/societe.php");
   }
 
-  /* if(count($error_list) != 0){
-    $string = '../public/view/frontend/forms/add-societe.php?status=false';
-    foreach($error_list as $index=>$value){
-        $string .= '&'.$value.'=false';
-    }
-  }
-  
 ?>
