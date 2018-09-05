@@ -1,5 +1,14 @@
 <?php include('head.php')?>
 <body>
+<?php 
+if ( isset($_GET['error']) && $_GET['error'] == 1 )
+{
+     echo 
+     "<div class='notif'>
+    <p>Vous n'avez pas les droits d'éditer ou effacer…!</p>
+    </div>";
+}
+?>
 	<h1>Liste clients</h1>
     <a href="forms/add-contact.php">Ajouter</a>
     <table>
@@ -26,7 +35,7 @@
 										$i ++;
 									}
 							?>
-            <?php include('../../../model/model.php');
+            <?php include('../../../model/model_clients.php');
             $result = $db->query('SELECT * FROM personnes');
                 while ($data = $result->fetch())
             {

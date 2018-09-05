@@ -1,5 +1,14 @@
 <?php include('head.php')?>
 <body>
+<?php 
+if ( isset($_GET['error']) && $_GET['error'] == 1 )
+{
+     echo 
+     "<div class='notif'>
+    <p>Vous n'avez pas les droits d'éditer ou effacer…!</p>
+    </div>";
+}
+?>
 	<h1>Liste de Facture</h1>
     <a href="forms/add-facture.php">Ajouter une facture</a>
     <table>
@@ -26,7 +35,7 @@
                         <td><input name="societe_id_societe" value="<?=$data["societe_id_societe"]?>"></td>
                         <td><input name="personnes_id_personnes" value="<?=$data['personnes_id_personnes']?>"></td>
                         <td><a href="forms/edit-facture.php?id=<?=$data["id_facture"]?>"><i class="fas fa-pen"></i></a></td>
-                        <td><a href="../../../controller/delete.php?id=<?=$data["id_facture"]?>"><i class="far fa-trash-alt"></i></a></td>
+                        <td><a href="../../../controller/delete-factures.php?id=<?=$data["id_facture"]?>"><i class="far fa-trash-alt"></i></a></td>
                     </tr>
                     <?php
                 }

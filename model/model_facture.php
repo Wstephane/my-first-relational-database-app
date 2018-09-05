@@ -1,7 +1,5 @@
  <?php
 
-  // Factures
-
   if (isset($_POST['submit_facture'])) {
     include('../controller/controller.php');
     
@@ -18,5 +16,4 @@
     $stmt->Execute();
     header("Location: ../public/view/frontend/factures.php");
     }
-
   ?>

@@ -20,4 +20,4 @@
     header("Location: ../public/view/frontend/societe.php");
   }
 
-?>
+  ?>
