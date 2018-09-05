@@ -17,6 +17,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
     <div class="waves-effect waves-light btn blue accent-4 add">
         <a href="frontend/forms/add-societe.php">Ajouter une société</a>
     </div>
+ </div>   
     <div class="row">
         <table>
             <thead>
@@ -55,7 +56,10 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             <a href="frontend/societe.php">Gérér les Sociétés</a>
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> pedro-v2
     <div class="row heading_table">
         <h1>Facture</h1>
         <div class="waves-effect waves-light btn blue accent-4 add">

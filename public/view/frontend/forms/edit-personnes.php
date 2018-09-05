@@ -1,5 +1,5 @@
 <?php
-include("../../../../controller/edit.php");
+include("../../../../controller/edit-personnes.php");
 include('../head.php');
 ?>
 <body>
