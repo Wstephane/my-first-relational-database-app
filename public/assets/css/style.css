@@ -303,3 +303,22 @@ input[type="submit"] {
     color: red;
     margin-top: 10px;
 }
+
+footer{
+    height: 220px;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+footer i{
+    margin-right: 15px;
+}
+footer h5{
+    color: black;
+}
+footer p{
+    color: black;
+}
+footer li{
+    color: black;
+}

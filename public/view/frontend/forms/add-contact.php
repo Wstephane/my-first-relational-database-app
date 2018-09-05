@@ -1,8 +1,16 @@
 <?php include('../head.php');?>
+<link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
 <body>
-	<a href="../clients.php">Personnel</a>
+<?php include('../../frontend/header.php');?>
+	<section class="menu">
+		<a href="index.php">Accueil</a>
+		<a href="fournisseurs.php">Founisseurs</a>
+		<a href="clients.php">Clients</a>   
+	</section>
+	<a href="../personnes.php">Personnel</a>
 	<h1>Ajouter un membre</h1>
-	<form action="../../../../model/model.php" method="post">
+	<form action="../../../../model/model_personnes.php" method="post">
 		<div>
 			<label for="nom_personne">Nom du membre</label>
 			<input type="text" name="nom_personne" value="">
@@ -24,23 +32,11 @@
 		<?php include('../../../../model/db.php');
 		$result = $db->query('SELECT * FROM societe');
 		$societe_name = array();
-		// $i =1;
-			while ($data = $result->fetch())
-				{
-					// $societe_name[$i] = $data['nom_societe'];
-					echo "<option value='".$data["id_societe"]."'>".$data['nom_societe']."</option>";
-					// $i ++;
-				}
-
+			while ($data = $result->fetch()){
+				echo "<option value='".$data["id_societe"]."'>".$data['nom_societe']."</option>";
+			}
 		?>
 		</select>
-		<!-- <div>
-			<label for="types">Types</label>
-			<select name="types_id_types">
-				<option value="1">Fournisseur</option>
-				<option value="2">Client</option>
-			</select>
-		</div> -->
 		<button type="submit" name="submit-clients">Envoyer</button>
 	</form>
 </body>

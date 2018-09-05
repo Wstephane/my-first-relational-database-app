@@ -61,7 +61,6 @@
     if (!$san_objet_facture) {
         array_push($error_list, "san_objet_facture");
     }
-    print_r($error_list);
 
     //Clients
 

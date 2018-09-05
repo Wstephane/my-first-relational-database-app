@@ -3,6 +3,11 @@
 </head>
 <body>
 <?php include('frontend/header.php');?>
+<section class="menu">
+        <a href="index.php">Accueil</a>
+        <a href="fournisseurs.php">Founisseurs</a>
+        <a href="clients.php">Clients</a>   
+</section>
 <?php 
 if ( isset($_GET['error']) && $_GET['error'] == 1 )
 {
@@ -56,14 +61,10 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             <a href="frontend/societe.php">Gérér les Sociétés</a>
         </div>
     </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> pedro-v2
     <div class="row heading_table">
         <h1>Facture</h1>
         <div class="waves-effect waves-light btn blue accent-4 add">
-            <a href="frontend/forms/add-societe.php">Ajouter une facture</a>
+            <a href="frontend/forms/add-facture.php">Ajouter une facture</a>
         </div>
     </div>
     <div class="row">
@@ -97,14 +98,14 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </tbody>
         </table>
         <div class="index-links">
-            <a href="frontend/societe.php">Gérér les Factures</a>
+            <a href="frontend/factures.php">Gérér les Factures</a>
         </div>
     </div>
 
     <div class="row heading_table">
         <h1>Clients</h1>
         <div class="waves-effect waves-light btn blue accent-4 add">
-            <a href="frontend/forms/add-clients.php">Ajouter un client</a>
+            <a href="frontend/forms/add-contact.php">Ajouter un client</a>
         </div>
     </div>
     <div class="row">
@@ -119,7 +120,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </tr>
             </thead>
             <tbody>
-                <?php include('../../model/model_clients.php');
+                <?php include('../../model/model_personnes.php');
                 $result = $db->query('SELECT * FROM personnes ORDER BY id_personnes DESC LIMIT 5');
                 while ($data = $result->fetch())
                 {

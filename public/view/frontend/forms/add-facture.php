@@ -1,9 +1,20 @@
 <?php include('../head.php');?>
+<link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
 <body>
-	<a href="../factures.php">Facture</a>
-	<h1>Ajouter une Facture</h1>
-	<form action="../../../../model/model_facture.php" method="post" enctype="multipart/form-data">
-		<div>
+<?php include('../../frontend/header.php');?>
+	<section class="menu">
+		<a href="index.php">Accueil</a>
+		<a href="fournisseurs.php">Founisseurs</a>
+		<a href="clients.php">Clients</a>   
+	</section>
+	<div class="container">
+		<div class="form-container">
+		<div class="row heading_table heading_edit">
+			<h1>Ajouter une Facture</h1>
+		</div>
+	<form action="../../../../model/model_facture.php" method="post" enctype="multipart/form-data" class="add-edit">
+		<div class="input-field">
 			<label for="numero_facture">Numéro de facture</label>
 			<input type="number" name="numero_facture" value="">
 			<?php
@@ -14,7 +25,7 @@
 				}
             ?>
 		</div>
-        <div>
+		<div >
 			<label for="date_facture">Date de la facture</label>
 			<input type="date" name="date_facture" value="">
 			<?php
@@ -25,7 +36,7 @@
 				}
             ?>
 		</div>
-		<div>
+		<div class="input-field">
 			<label for="objet">Objet de la facture</label>
 			<input type="text" name="objet_facture" value="">
 			<?php
@@ -36,7 +47,15 @@
 				}
             ?>
 		</div>
-		<button type="submit" name="submit_facture">Envoyer</button>
+		<button type="submit" name="submit_facture" class="waves-effect waves-light btn blue accent-4 add">Envoyer</button>
 	</form>
+	</div>
+</div>
+	<script>
+		  document.addEventListener('DOMContentLoaded', function() {
+   			var elems = document.querySelectorAll('.autocomplete');
+   			var instances = M.Autocomplete.init(elems, options);
+  		});
+  </script>
 </body>
 </html>
