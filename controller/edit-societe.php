@@ -4,21 +4,21 @@ include('../../../../model/db.php');
 if(isset($_POST['edit-societe']))
 {
     $id_societe = $_POST['id_societe'];
-    
+
     $nom_societe = $_POST['nom_societe'];
     $pays_societe = $_POST['pays_societe'];
     $tva_societe = $_POST['tva_societe'];
     $telephone_societe = $_POST['telephone_societe'];
     $types_id_types = $_POST['types_id_types'];
-    
-    if ($_SESSION['role'] !== 'ADMIN'){
-        header("Location: ../../../../public/view/index.php?error=1");
-    
-    }else{
+
+    // if ($_SESSION['role'] !== 'ADMIN'){
+    //     header("Location: ../../../../public/view/index.php?error=1");
+    //
+    // }else{
     $sql = "UPDATE societe SET nom_societe=:nom_societe, pays_societe=:pays_societe, tva_societe=:tva_societe, telephone_societe=:telephone_societe, types_id_types=:types_id_types
     WHERE id_societe=:id_societe";
     $query = $db->prepare($sql);
-    }
+    // }
 
         $query->bindParam(':id_societe', $id_societe);
         $query->bindParam(':nom_societe', $nom_societe);
@@ -28,7 +28,7 @@ if(isset($_POST['edit-societe']))
         $query->bindParam(':types_id_types', $types_id_types);
 
     $result = $query->execute();
-    header("Location: ../../../../public/view/frontend/societe.php");
+    header("Location: ../../../../public/view/frontend/list/societe.php");
     }
 
     $id = $_GET['id'];
@@ -44,5 +44,5 @@ if(isset($_POST['edit-societe']))
         $tva_societe = $row['tva_societe'];
         $telephone_societe = $row['telephone_societe'];
         $types_id_types = $row['types_id_types'];
-    }   
+    }
 ?>

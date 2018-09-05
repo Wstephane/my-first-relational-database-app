@@ -16,16 +16,22 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
     </div>";
 }
 ?>
+<div class="row heading_table">
 	<h1>Liste clients</h1>
-    <a href="../forms/add-contact.php">Ajouter</a>
+  <div class="waves-effect waves-light btn blue accent-4 add">
+      <a href="forms/add-contact.php">Ajouter un Client</a>
+  </div>
+</div>
+<div class="row">
     <table>
         <thead>
-        <tr>
+     <tr class="row-titles">
             <th>Nom</th>
             <th>Prénom</th>
             <th>Téléphone</th>
 			<th>E-mail</th>
-            <th>Société</th>
+      <th>Société</th>
+            <th colspan="3"></th>
         </tr>
         </thead>
         <tbody>
@@ -44,11 +50,11 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             {
             ?>
         <tr>
-          <td><input name="nom_personne" value="<?=$data["nom_personnes"]?>"></td>
-          <td><input name="prenom_personne" value="<?=$data["prenom_personnes"]?>"></td>
-          <td><input name="telephone_personne" value="<?=$data["telephone_personnes"]?>"></td>
-          <td><input name="email_personne" value="<?=$data["email_personnes"]?>"></td>
-		  <td><input name="societe_id_societe" value="<?=$societe_name[$data["societe_id_societe"]]?>"></td>
+          <td><input class="input-read" name="nom_personne" readonly value="<?=$data["nom_personnes"]?>"></td>
+          <td><input class="input-read" name="prenom_personne" readonly value="<?=$data["prenom_personnes"]?>"></td>
+          <td><input class="input-read" name="telephone_personne" readonly value="<?=$data["telephone_personnes"]?>"></td>
+          <td><input class="input-read" name="email_personne"  readonly value="<?=$data["email_personnes"]?>"></td>
+		  <td><input class="input-read" name="societe_id_societe" readonly value="<?=$societe_name[$data["societe_id_societe"]]?>"></td>
 		  <td><a href="../forms/view-personnes.php?id=<?=$data["id_personnes"]?>"><i class="far fa-eye"></i></a></td>
 		  <td><a href="../forms/edit-personnes.php?id=<?=$data["id_personnes"]?>"><i class="fas fa-pen"></i></a></td>
           <td><a href="../../../../controller/delete-personnes.php?id=<?=$data["id_personnes"]?>"><i class="far fa-trash-alt"></i></a></td>
@@ -56,7 +62,8 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
         <?php } ?>
       </tbody>
     </table>
+     </div>
     <?php include('../footer.php');?>
-    
+
 </body>
 </html>

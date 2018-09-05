@@ -2,7 +2,7 @@
   include('db.php');
 
   //Societe
-  
+
   if (isset($_POST['submit_societe']))
   {
     include('../controller/controller.php');
@@ -17,7 +17,7 @@
     $stmt->bindParam(':types_id_types', $types_id_types);
 
     $stmt->execute();
-    header("Location: ../public/view/frontend/societe.php");
+    header("Location: ../public/view/frontend/list/societe.php");
   }
 
   ?>

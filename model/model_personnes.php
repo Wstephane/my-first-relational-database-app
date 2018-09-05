@@ -14,7 +14,7 @@ if (isset($_POST['submit-clients']))
     $stmt->bindParam(':societe_id_societe', $societe_id_societe);
 
     $stmt->execute();
-    header("Location: ../public/view/frontend/clients.php");
+    header("Location: ../public/view/frontend/list/clients.php");
   }
 
 ?>

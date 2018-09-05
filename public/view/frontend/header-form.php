@@ -10,6 +10,6 @@
 
 <section class="menu">
         <a href="../../index.php">Accueil</a>
-        <a href="fournisseurs.php">Founisseurs</a>
-        <a href="clients.php">Clients</a>
+        <a href="../list/fournisseurs.php">Founisseurs</a>
+        <a href="../list/clients.php">Clients</a>
 </section>

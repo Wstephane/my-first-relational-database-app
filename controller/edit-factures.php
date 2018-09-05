@@ -2,23 +2,23 @@
 include('../../../../model/db.php');
 
 if(isset($_POST['edit-facture']))
-{ 	
+{
     $id_facture = $_POST['id_facture'];
-    
+
     $numero_facture = $_POST['numero_facture'];
     $date_facture = $_POST['date_facture'];
     $objet_facture = $_POST['objet_facture'];
     $societe_id_societe = $_POST['societe_id_societe'];
     $personnes_id_personnes = $_POST['personnes_id_personnes'];
-    
-    if ($_SESSION['role'] !== 'ADMIN'){
-        header("Location: ../../../../public/view/index.php?error=1");
-    
-    }else{
+
+    // if ($_SESSION['role'] !== 'ADMIN'){
+    //     header("Location: ../../../../public/view/index.php?error=1");
+    //
+    // }else{
     $sql = "UPDATE facture SET numero_facture=:numero_facture, date_facture=:date_facture, objet_facture=:objet_facture, societe_id_societe=:societe_id_societe, personnes_id_personnes=:personnes_id_personnes
     WHERE id_facture=:id_facture";
     $query = $db->prepare($sql);
-    }
+    //}
 
         $query->bindParam(':id_facture', $id_facture);
         $query->bindParam(':numero_facture', $numero_facture);
@@ -28,7 +28,7 @@ if(isset($_POST['edit-facture']))
         $query->bindParam(':personnes_id_personnes', $personnes_id_personnes);
 
     $result = $query->execute();
-    header("Location: ../../../../public/view/frontend/facture.php");
+    header("Location: ../../../../public/view/frontend/list/facture.php");
     }
 
     $id = $_GET['id'];

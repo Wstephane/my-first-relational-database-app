@@ -2,12 +2,8 @@
 <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body>
-<?php include('../../frontend/header.php');?>
-	<section class="menu">
-		<a href="index.php">Accueil</a>
-		<a href="fournisseurs.php">Founisseurs</a>
-		<a href="clients.php">Clients</a>   
-	</section>
+<?php include('../../frontend/header-form.php');?>
+
 	<div class="container">
 		<div class="form-container">
 		<div class="row heading_table heading_edit">
@@ -22,7 +18,7 @@
 						$_GET['san_nom_societe'] = "";}
 						if($_GET['san_nom_societe'] == "false"){
 							echo '<p class="error">Veuillez introduire un nom correct.</p>';
-						}	
+						}
 					?>
 				</div>
 				<div class="input-field">
@@ -33,7 +29,7 @@
 						$_GET['san_pays_societe'] = "";}
 						if($_GET['san_pays_societe'] == "false"){
 							echo '<p class="error">Veuillez introduire un pays correct.</p>';
-						}	
+						}
 					?>
 				</div>
 				<div class="input-field">
@@ -44,7 +40,7 @@
 						$_GET['san_tva_societe'] = "";}
 						if($_GET['san_tva_societe'] == "false"){
 							echo '<p class="error">Veuillez introduire un número correct.</p>';
-						}	
+						}
 					?>
 				</div>
 				<div class="input-field">
@@ -55,7 +51,7 @@
 						$_GET['san_telephone_societe'] = "";}
 						if($_GET['san_telephone_societe'] == "false"){
 							echo '<p class="error">Veuillez introduire un número correct.</p>';
-						}	
+						}
 					?>
 				</div>
 				<div class="input-select">
@@ -67,7 +63,7 @@
 				</div>
 				<div class="controls-btn">
 					<button type="submit" name="submit_societe" class="waves-effect waves-light btn blue accent-4 add">Envoyer</button>
-					<div class="btn white"><a href="../societe.php">Annuler</a></div>
+					<div class="btn white"><a href="../list/societe.php">Annuler</a></div>
 				</div>
 			</form>
 		</div>
