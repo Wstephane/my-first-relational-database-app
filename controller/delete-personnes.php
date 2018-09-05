@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('../model/db.php');
 if ($_SESSION['role'] !== 'ADMIN'){
     header("Location: ../public/view/frontend/clients.php?error=1");

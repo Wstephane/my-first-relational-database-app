@@ -1,6 +1,5 @@
 <?php
 include('../../../../model/db.php');
-
 if ($_SESSION['role'] !== 'ADMIN'){
     header("Location: ../../../../public/view/index.php?error=1");
 
@@ -45,14 +44,9 @@ if ($_SESSION['role'] !== 'ADMIN'){
         $telephone_societe = $row['telephone_societe'];
         $types_id_types = $row['types_id_types'];
     }
-}
+
 
 //Facture
-
-if ($_SESSION['role'] !== 'ADMIN'){
-    header("Location: ../../../../public/view/index.php?error=1");
-
-}else{
 
     if(isset($_POST['edit-facture']))
     { 	
@@ -94,13 +88,6 @@ if ($_SESSION['role'] !== 'ADMIN'){
         $personnes_id_personnes = $row['personnes_id_personnes'];
     }
 
-}
-
-if ($_SESSION['role'] !== 'ADMIN'){
-    header("Location: ../../../../public/view/index.php?error=1");
-
-}else{
-
     if(isset($_POST['edit-personnes']))
     {
     $id_personne = $_POST['id_personnes'];
@@ -141,5 +128,4 @@ if ($_SESSION['role'] !== 'ADMIN'){
         $societe_id_societe = $row['societe_id_societes'];
     }
 }
-
 ?>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 $id_facture = $_GET['id'];
 if ($_SESSION['role'] !== 'ADMIN'){
     header("Location: ../public/view/frontend/factures.php?error=1");
