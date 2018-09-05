@@ -16,11 +16,16 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
     </div>";
 }
 ?>
-	<h1>Liste de Facture</h1>
-    <a href="forms/add-facture.php">Ajouter une facture</a>
+<div class="row heading_table">
+    <h1>Liste de Facture</h1>
+    <div class="waves-effect waves-light btn blue accent-4 add">
+        <a href="forms/add-facture.php">Ajouter une facture</a>
+    </div>
+</div>
+<div class="row">   
     <table>
         <thead>
-        <tr>
+        <tr class="row-titles">
             <th>Numéro</th>
             <th>Date</th>
             <th>Objet</th>
@@ -49,5 +54,6 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             ?>
       </tbody>
     </table>
+</div>
 </body>
 </html>

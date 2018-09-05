@@ -25,7 +25,7 @@
 				}
             ?>
 		</div>
-		<div >
+		<div>
 			<label for="date_facture">Date de la facture</label>
 			<input type="date" name="date_facture" value="">
 			<?php
@@ -47,7 +47,10 @@
 				}
             ?>
 		</div>
-		<button type="submit" name="submit_facture" class="waves-effect waves-light btn blue accent-4 add">Envoyer</button>
+		<div class="controls-btn">
+			<button type="submit" name="submit_facture" class="waves-effect waves-light btn blue accent-4 add">Envoyer</button>
+			<div class="btn white"><a href="../factures.php">Annuler</a></div>
+		</div>
 	</form>
 	</div>
 </div>

@@ -9,10 +9,25 @@
         <a href="fournisseurs.php">Founisseurs</a>
         <a href="clients.php">Clients</a>   
 	</section>
-	<a href="../clients.php">Membres</a>
-	<h2><?php echo $nom_personne.' '.$prenom_personne;?></h2>
-	<p><?php echo $telephone_personne;?></p>
-	<p><?php echo $mail_personne;?></p>
-	<p><?php echo $nom_societe;?></p>
+	<div class="container">
+	<div class="form-container view">
+		<div class="input-view">
+			<label for="name">Nom de la personne</label>
+			<p><?php echo $nom_personne.' '.$prenom_personne;?></p>
+		</div>
+		<label for="number">Téléphone de la personne</label>
+			<div class="input-view">
+			<p><?php echo $telephone_personne;?></p>
+		</div>
+		<div class="input-view">
+			<label for="Email">E-mail de la personne</label>
+			<p><?php echo $mail_personne;?></p>
+		</div>
+		<div class="input-view">
+			<label for="text">Nom de la société</label>
+			<p><?php echo $nom_societe;?></p>
+		</div>
+	</div>
+	</div>	
 </body>
 </html>

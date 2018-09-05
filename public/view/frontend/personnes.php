@@ -16,11 +16,16 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
     </div>";
 }
 ?>
+<div class="row heading_table">
 	<h1>Liste clients</h1>
-    <a href="forms/add-contact.php">Ajouter</a>
+    <div class="waves-effect waves-light btn blue accent-4 add">
+        <a href="forms/add-contact.php">Ajouter un Client</a>
+    </div>
+</div>    
+<div class="row">
     <table>
         <thead>
-        <tr>
+        <tr class="row-titles">
             <th>Nom</th>
             <th>Prénom</th>
             <th>Téléphone</th>
@@ -56,5 +61,6 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
         <?php } ?>
       </tbody>
     </table>
+    </div>
 </body>
 </html>
