@@ -2,16 +2,27 @@
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<?php include('frontend/header.php');?>
+
+<?php session_start();?>
+<header>
+    <div class="row header-navbar">
+        <h1><i class="fas fa-cookie-bite"></i>COGIP</h1>
+            <p class="welcome">Bonjour <b><?php echo $_SESSION['nom'];?></b> !</p>
+        <a href="">Deconnexion</a>
+    </div>
+
+</header>
+
 <section class="menu">
-        <a href="index.php">Accueil</a>
-        <a href="fournisseurs.php">Founisseurs</a>
-        <a href="clients.php">Clients</a>   
+        <a href="../../index.php">Accueil</a>
+        <a href="frontend/list/fournisseurs.php">Founisseurs</a>
+        <a href="frontend/list/clients.php">Clients</a>
 </section>
-<?php 
+
+<?php
 if ( isset($_GET['error']) && $_GET['error'] == 1 )
 {
-     echo 
+     echo
      "<div class='notif'>
     <p>Vous n'avez pas les droits d'éditer ou effacer…!</p>
     </div>";
@@ -22,7 +33,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
     <div class="waves-effect waves-light btn blue accent-4 add">
         <a href="frontend/forms/add-societe.php">Ajouter une société</a>
     </div>
- </div>   
+ </div>
     <div class="row">
         <table>
             <thead>
@@ -58,7 +69,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </tbody>
         </table>
         <div class="index-links">
-            <a href="frontend/societe.php">Gérér les Sociétés</a>
+            <a href="frontend/list/societe.php">Gérér les Sociétés</a>
         </div>
     </div>
     <div class="row heading_table">
@@ -98,14 +109,14 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </tbody>
         </table>
         <div class="index-links">
-            <a href="frontend/factures.php">Gérér les Factures</a>
+            <a href="frontend/list/factures.php">Gérér les Factures</a>
         </div>
     </div>
 
     <div class="row heading_table">
-        <h1>Clients</h1>
+        <h1>Membres</h1>
         <div class="waves-effect waves-light btn blue accent-4 add">
-            <a href="frontend/forms/add-contact.php">Ajouter un client</a>
+            <a href="frontend/forms/add-contact.php">Ajouter un membre</a>
         </div>
     </div>
     <div class="row">
@@ -127,7 +138,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
                 ?>
                 <tr>
                     <td class="table-first"><input name="nom_personnes" value="<?=$data["nom_personnes"]?>" readonly class="input-read"></td>
-                    <td><input name="prenom_personne" value="<?=$data["prenom_personne"]?>" readonly class="input-read"></td>
+                    <td><input name="prenom_personne" value="<?=$data["prenom_personnes"]?>" readonly class="input-read"></td>
                     <td><input name="email_personnes" value="<?=$data["email_personnes"]?>" readonly class="input-read"></td>
                     <td><input name="telephone_personnes" value="<?=$data["telephone_personnes"]?>" readonly class="input-read"></td>
                     <td><input name="societe_id_societe" value="<?=$type_name[$data['societe_id_societe']]?>" readonly class="input-read"></td>
@@ -139,7 +150,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </tbody>
         </table>
         <div class="index-links">
-            <a href="frontend/clients.php">Gérér les Clients</a>
+            <a href="frontend/list/personnes.php">Gérér les Membres</a>
         </div>
     </div>
 </body>
