@@ -26,7 +26,7 @@
 										$i ++;
 									}
 							?>
-            <?php include('../../../model/model.php');
+            <?php include('../../../model/model_clients.php');
             $result = $db->query('SELECT * FROM personnes');
                 while ($data = $result->fetch())
             {
