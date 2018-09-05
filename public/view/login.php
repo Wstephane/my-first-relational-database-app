@@ -19,7 +19,7 @@
         </div>    
         <?php
             if(isset($_GET['msg'])){
-                echo "<p class='error'>" . $_GET['msg'] . "</p>";
+                echo "<p class='error-login'>" . $_GET['msg'] . "</p>";
             }
         ?>
             <input type="submit" name="send" value="Connexion" class="waves-effect waves-light btn blue accent-4 login-btn">

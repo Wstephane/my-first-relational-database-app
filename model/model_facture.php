@@ -1,7 +1,5 @@
  <?php
 
-  // Factures
-
   if (isset($_POST['submit_facture'])) {
     include('../controller/controller.php');
     
@@ -18,18 +16,4 @@
     $stmt->Execute();
     header("Location: ../public/view/frontend/factures.php");
     }
-
-  // if (count($error_list) != 0){
-  //   $string = '../public/view/frontend/forms/add-facture.php?status=false';
-  //   foreach ($error_list as $index=>$value) {
-  //       $string .= '&'.$value.'=false';
-  //   }
-  //   var_dump($string);
-  //   header('Location: '.$string);
-
-  // } else {
-    
-  //   header('Location: ../public/view/index.php');
-  // }
-
   ?>
