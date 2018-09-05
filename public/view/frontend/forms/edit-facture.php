@@ -1,8 +1,14 @@
-<?php
-include("../../../../controller/edit.php");
-include('../head.php');
-?>
+<?php include("../../../../controller/edit-factures.php");?>
+<?php include('../head.php');?>
+<link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
 <body>
+<?php include('../../frontend/header.php');?>
+	<section class="menu">
+		<a href="index.php">Accueil</a>
+		<a href="fournisseurs.php">Founisseurs</a>
+		<a href="clients.php">Clients</a>   
+	</section>
 	<a href="../facture.php">Facture</a>
 	<h1>Editer Facture</h1>
 	<form action="edit-facture.php" method="post">

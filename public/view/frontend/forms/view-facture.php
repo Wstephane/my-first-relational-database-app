@@ -4,6 +4,11 @@
 </head>
 	<body>
 	<?php include('../../frontend/header.php');?>
+		<section class="menu">
+			<a href="index.php">Accueil</a>
+			<a href="fournisseurs.php">Founisseurs</a>
+			<a href="clients.php">Clients</a>   
+		</section>
 		<div class="container">
 			<div class="form-container view">
 				<div class="input-view">

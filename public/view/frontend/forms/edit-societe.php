@@ -1,8 +1,14 @@
-<?php include("../../../../controller/edit.php"); ?>
+<?php include("../../../../controller/edit-societe.php"); ?>
 <?php include('../head.php');?>
 <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
 <body>
 <?php include('../../frontend/header.php');?>
+	<section class="menu">
+		<a href="index.php">Accueil</a>
+		<a href="fournisseurs.php">Founisseurs</a>
+		<a href="clients.php">Clients</a>   
+	</section>
 <div class="container">
 	<div class="form-container">
 		<div class="row heading_table heading_edit">

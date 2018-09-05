@@ -12,7 +12,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
 }
 ?>
 <div class="row heading_table">
-    <h1>Clients</h1>
+    <h1>Fournisseurs</h1>
 </div>
 <div class="row">
         <table>
@@ -26,7 +26,7 @@ if ( isset($_GET['error']) && $_GET['error'] == 1 )
             </thead>
             <tbody>
                 <?php include('../../../../model/model_societe.php');
-                $result = $db->query('SELECT * FROM societe WHERE types_id_types=2');
+                $result = $db->query('SELECT * FROM societe WHERE types_id_types=1');
                 // $type_name = array(
                 //     1 => 'Fournisseur',
                 //     2 => 'Client'

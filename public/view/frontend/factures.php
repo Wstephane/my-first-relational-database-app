@@ -1,5 +1,12 @@
 <?php include('head.php')?>
+</head>
 <body>
+<?php include('header.php')?>
+<section class="menu">
+        <a href="index.php">Accueil</a>
+        <a href="fournisseurs.php">Founisseurs</a>
+        <a href="clients.php">Clients</a>   
+</section>
 <?php 
 if ( isset($_GET['error']) && $_GET['error'] == 1 )
 {
