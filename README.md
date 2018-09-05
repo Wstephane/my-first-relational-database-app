@@ -17,6 +17,10 @@ Voici [le lien](https://trello.com/b/Ri2UquO7/projet-my-first-relational-databas
 
 Voici le lien vers le projet déployer.
 
+admin / admin-pwd
+
+oper / oper-pwd
+
 
 Ce projet nous appris à :
 --------------------------
